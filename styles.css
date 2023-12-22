@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;600;700&display=swap");
+
+body {
+  font-family: "Sofia Sans", sans-serif;
+  margin: 0;
+  padding: 60px;
+  box-sizing: border-box;
+  background-color: rgba(46, 196, 182, 0.04);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  color: rgba(0, 11, 10, 1);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.about {
+  width: 50%;
+  padding: 0 40px;
+}
+.about p {
+  color: rgba(115, 115, 115, 1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 40px;
+  width: 50%;
+  border-radius: 6px;
+  section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  label {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  input {
+    border: 1px solid rgba(115, 115, 115, 1);
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 30px;
+    color: rgba(115, 115, 115, 1);
+  }
+  select {
+    border: 1px solid rgba(115, 115, 115, 1);
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 30px;
+    color: rgba(115, 115, 115, 1);
+  }
+}
+.password-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  position: relative;
+  label {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  input {
+    border: 1px solid rgba(115, 115, 115, 1);
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 30px;
+    color: rgba(115, 115, 115, 1);
+  }
+  svg{
+    position: absolute;
+    right: 10px;
+    bottom: 50%;
+    cursor: pointer;
+  }
+}
+
+.full-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  label {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  input {
+    border: 1px solid rgba(115, 115, 115, 1);
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 30px;
+    color: rgba(115, 115, 115, 1);
+  }
+  select {
+    border: 1px solid rgba(115, 115, 115, 1);
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 30px;
+    color: rgba(115, 115, 115, 1);
+  }
+}
+
+input:focus {
+  outline-color: rgba(46, 196, 182, 1);
+}
+
+select:focus {
+  outline-color: rgba(46, 196, 182, 1);
+}
+
+button {
+  background-color: rgba(46, 196, 182, 1);
+  color: rgba(255, 255, 255, 1);
+  padding: 15px 4px;
+  border: none;
+  border-radius: 2px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-note {
+  text-align: center;
+}
+
+a {
+  color: rgba(46, 196, 182, 1);
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 30px;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+    background-color: rgba(46, 196, 182, 0.04);
+    display: flex;
+    flex-direction: column;
+  }
+  .about {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .form-container {
+    width: 100%;
+    background-color: rgba(46, 196, 182, 0.04);
+    padding: 0;
+  }
+  form {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 10px;
+  }
+}
